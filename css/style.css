@@ -56,11 +56,12 @@ body {
 header {
     text-align: left;
     display: inline-block;
-    margin-left: 1%;
+    margin-left: 1.5%;
 }
 
 h1, h2 {
-    text-transform: uppercase;;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .black-header {
@@ -89,7 +90,8 @@ nav li {
 nav a {
     text-transform: uppercase;
     margin: 0.8em;
-    font-size: 95%;
+    font-size: 90%;
+    letter-spacing: 1px;
     transition: color 0.1s ease-in-out;
 }
 
@@ -130,12 +132,22 @@ nav a:hover {
 /* -------------------------
     Main content
 -------------------------- */
+main p {
+    color: #232828;
+    line-height: 130%;
+}
+
+h3, h4 {
+    font-size: 140%;
+    margin-bottom: 0;
+}
+
 main {
     margin-top: 5%; margin-bottom: 5%;
 }
 
 .left-main {
-    padding-left: 16%; padding-right: 15%;
+    padding-left: 18%; padding-right: 15%;
 }
 
 .center-main {
@@ -144,13 +156,8 @@ main {
     text-align: center;
 }
 
-.center-main h3 {
-    font-size: 160%;
+.center-main h3, h4 {
     font-weight: normal;
-}
-
-.center-main h4 {
-    text-transform: uppercase;
 }
 
 /* -------------------------
@@ -164,6 +171,7 @@ main {
     text-transform: uppercase;
     text-align: center;
     background-color: #31A3A3;
+    letter-spacing: 1px;
     transition: background-color 0.1s ease-in-out; /* to fade on hover */
 }
 
@@ -194,7 +202,6 @@ main {
 }
 
 dt {
-    text-transform: uppercase;
     font-weight: bold;
     color: #151818;
 }
@@ -202,7 +209,8 @@ dt {
 dd {
     margin-left: auto;
     padding-top: 1.5%; padding-bottom: 2.5%;
-    color: #232828; /* TODO: FIND LIGHTER VALUE */
+    color: #232828;
+    line-height: 140%;
 }
 
 /* -------------------------
