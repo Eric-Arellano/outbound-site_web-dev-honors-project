@@ -1,14 +1,13 @@
 /* -------------------------
     Page
 -------------------------- */
-
 header, main, nav, footer, figure, figcaption, aside, section, article {
     display: block;
 }
 
 html {
     font-size: 120%;
-    font-family:  serif; /* TODO: FIND LIGHTER VALUE */
+    font-family: Times New Roman, serif;
 }
 
 a {
@@ -47,10 +46,13 @@ body {
     color: #31A3A3;
 }
 
+.white-bg a:visited {
+    color: #31A3A3;
+}
+
 /* -------------------------
     Header
 -------------------------- */
-
 header {
     text-align: left;
     display: inline-block;
@@ -63,13 +65,12 @@ h1, h2 {
 
 .black-header {
     background-color: #212525;
-    color: #D3CFC6; /* TODO: FIND WHITER VALUE */
+    color: #FFFDF9;
 }
 
 /* -------------------------
     Navigation
 -------------------------- */
-
 nav {
     text-align: right;
     float: right;
@@ -96,13 +97,16 @@ nav a:hover {
 }
 
 .black-header a {
-    color: #D3CFC6;
+    color: #FFFDF9;
+}
+
+.black-header a:visited {
+    color: #FFFDF9;
 }
 
 /* -------------------------
     Page Title
 -------------------------- */
-
 .hero-title {
     text-align: center;
     margin-top: 9%;
@@ -180,6 +184,26 @@ main {
 }
 
 /* -------------------------
+    FAQ page
+-------------------------- */
+/* section h3 {
+    font-size: 170%;
+    text-align: center;
+} */
+
+dt {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #151818;
+}
+
+dd {
+    margin-left: auto;
+    padding-top: 1.5%; padding-bottom: 2.5%;
+    color: #151818; /* TODO: FIND LIGHTER VALUE */
+}
+
+/* -------------------------
     Footer
 -------------------------- */
 footer {
@@ -190,15 +214,27 @@ footer {
     padding: .8em;
 }
 
+@media only screen and (max-width: 65em) and (min-width: 60em) {
+
+    html {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 60em) and (min-width: 37.5em) {
+
+    html {
+        font-size: 80%;
+    }
+}
+
 /* -------------------------
     Mobile
 -------------------------- */
 @media only screen and (max-width: 37.5em) {
-    .closet {
-        background-position: center;
-    }
+
 
     html {
-        font-size: 80%;
+        font-size: 60%;
     }
 }
