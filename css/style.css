@@ -66,6 +66,7 @@ h1, h2 {
 .black-header {
     background-color: #212525;
     color: #FFFDF9;
+    padding-bottom: 0.5%;
 }
 
 /* -------------------------
@@ -186,10 +187,11 @@ main {
 /* -------------------------
     FAQ page
 -------------------------- */
-/* section h3 {
-    font-size: 170%;
+.section-header {
+    font-size: 180%;
     text-align: center;
-} */
+    font-weight: normal;
+}
 
 dt {
     text-transform: uppercase;
@@ -200,7 +202,7 @@ dt {
 dd {
     margin-left: auto;
     padding-top: 1.5%; padding-bottom: 2.5%;
-    color: #151818; /* TODO: FIND LIGHTER VALUE */
+    color: #232828; /* TODO: FIND LIGHTER VALUE */
 }
 
 /* -------------------------
@@ -213,6 +215,10 @@ footer {
     margin-bottom: 0;
     padding: .8em;
 }
+
+/* -------------------------
+    Tablet
+-------------------------- */
 
 @media only screen and (max-width: 65em) and (min-width: 60em) {
 
