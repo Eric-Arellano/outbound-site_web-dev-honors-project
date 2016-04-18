@@ -1,13 +1,62 @@
+/**
+ * CONTENTS
+ *
+ * #A-General                             17
+ * #B-Headings                            29
+ * #C-Page (backgrounds)                  57
+ * #D-Masthead                            109
+ * #E-Primary-nav                         133
+ * #F-Main                                144
+ * #G-Footer                              164
+ * #H-Buttons                             175
+ */
+
+
+
 
 /*------------------------------------*\
-    #A-Page
+    #A-General
 \*------------------------------------*/
 
-.page {
-    margin: 0;
-    padding: 0;
+.hover-transition {
+    transition: color 0.1s ease-in-out;
 }
 
+
+
+
+
+/*------------------------------------*\
+    #B-Headings
+\*------------------------------------*/
+
+.giga, .mega, .kilo
+
+h1, .alpha {
+    font-size: 5rem;
+}
+
+h2, .beta {
+    font-size: 2rem;
+}
+
+h3, .gamma {
+    font-size: 2rem;
+}
+
+h4, .delta {
+    font-size: 1rem;
+}
+
+.milli
+
+
+
+
+
+/*------------------------------------*\
+    #C-Page (backgrounds)
+\*------------------------------------*/
 
 .page--closet {
     background-image:
@@ -19,11 +68,19 @@
     color: #FFFDF9;
 }
 
+    .page--closet a {
+        color: #FFFDF9;
+    }
+
 
 .page--white {
     background-color: #FFFDF9;
     color: #151818;
 }
+
+    .page--white a {
+        color: #31A3A3;
+    }
 
 
 .page--black {
@@ -31,9 +88,18 @@
     color: #FFFDF9;
 }
 
-    .page--black--tan-text {
+    .page--black a {
+        color: #31A3A3;
+    }
+
+
+.page--black--tan-text {
         background-color: #212525;
         color: #D3CFC6;
+}
+
+    .page--black--tan-text a {
+    color: #31A3A3;
     }
 
 
@@ -41,49 +107,73 @@
 
 
 /*------------------------------------*\
-    #B-Headings
+    #D-Masthead
 \*------------------------------------*/
-.giga, .mega, .kilo
-h1, .alpha
-h2, .beta
-h3, .gamma
-h4, .delta
-.milli
 
+.mast {
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+.mast__logo {
+    display: inline-block;
+}
+
+
+.mast__nav {
+    text-align: right;
+    float: right;
+}
 
 
 
 
 /*------------------------------------*\
-    #C-Masthead
+    #E-Primary-nav
 \*------------------------------------*/
-.mast
-.mast__logo
-.mast__nav
 
+.primary-nav
+
+.primary-nav__list {
+    display: inline;
+}
+
+
+/*------------------------------------*\
+    #F-Main
+\*------------------------------------*/
+
+main
+
+.main--left-align
+
+
+.main--center-align
+
+
+.main--two-col
+
+.main--two-col__left
+
+.main--two-col__right
+
+
+
+/*------------------------------------*\
+    #G-Footer
+\*------------------------------------*/
+
+footer {
+    margin-bottom: 0;
+}
 
 
 
 
 /*------------------------------------*\
-    #D-Content
-\*------------------------------------*/
-
-
-
-
-
-/*------------------------------------*\
-    #F-Footer
-\*------------------------------------*/
-
-
-
-
-
-
-/*------------------------------------*\
-    #G-Buttons
+    #H-Buttons
 \*------------------------------------*/
 
 .button {
@@ -98,11 +188,6 @@ h4, .delta
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1px;
-}
-
-
-.button--hover-transition {
-    transition: background-color 0.1s ease-in-out;
 }
 
 
@@ -126,3 +211,10 @@ h4, .delta
         border-color: #FFFDF9;
         color: #151818;
     }
+
+
+
+
+/*------------------------------------*\
+    #H-Definition-lists (does this need to exist?)
+\*------------------------------------*/
