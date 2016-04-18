@@ -19,6 +19,29 @@
     #A-General
 \*------------------------------------*/
 
+html {
+    font-size: 120%;
+    font-family: Times New Roman, serif;
+}
+
+
+h1, h2, h3, h4,
+.alpha, .beta, .gamma, .delta
+ul, dl, dd, dt
+p {
+    margin-bottom: 1rem;
+}
+
+    li {
+        margin-bottom: 0.2rem;
+        margin-left: 2.5rem;
+    }
+
+    p, ul {
+        padding-bottom: 1rem;
+    }
+
+
 .hover-transition {
     transition: color 0.1s ease-in-out;
 }
@@ -31,10 +54,7 @@
     #B-Headings
 \*------------------------------------*/
 
-html {
-    font-size: 120%;
-    font-family: Times New Roman, serif;
-}
+
 
 .giga {
     font-size: 4rem;
@@ -83,7 +103,9 @@ h4, .delta {
     font-size: 0.9rem;
 }
 
-
+p {
+    line-height: 130%;
+}
 
 
 
@@ -187,8 +209,7 @@ h4, .delta {
 }
 
 .primary-nav__list a {
-    padding: 0.8rem;
-
+    padding: .9rem;
 }
 
 
@@ -222,6 +243,7 @@ main {
     margin-bottom: 5%;
 }
 
+
 .main--left-align {
     padding-left: 18%;
     padding-right: 15%;
@@ -241,16 +263,16 @@ main {
     padding-right: 12%;
 }
 
-.main--two-col__left {
-    display: block;
-    margin-right: 40%;
-}
+    .main--two-col__left {
+        display: block;
+        margin-right: 40%;
+    }
 
-.main--two-col__right {
-    display: block;
-    float: right;
-    width: 40%;
-}
+    .main--two-col__right {
+        display: block;
+        float: right;
+        width: 25%;
+    }
 
 
 
