@@ -1,18 +1,15 @@
 /**
- * [Comment template]
- */
-
-/**
  * CONTENTS
  *
  * #A-General                             17
  * #B-Headings                            29
- * #C-Page (backgrounds)                  57
- * #D-Masthead                            109
- * #E-Primary-nav                         133
- * #F-Main                                144
- * #G-Footer                              164
- * #H-Buttons                             175
+ * #C-Page (backgrounds)                  89
+ * #D-Masthead                            146
+ * #E-Primary-nav                         176
+ * #F-Hero                                204
+ * #F-Main                                215
+ * #G-Footer                              259
+ * #H-Buttons                             272
  */
 
 
@@ -34,27 +31,57 @@
     #B-Headings
 \*------------------------------------*/
 
-.giga {}
-.mega {}
-.kilo {}
+html {
+    font-size: 120%;
+    font-family: Times New Roman, serif;
+}
+
+.giga {
+    font-size: 4rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.mega {
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.kilo {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
 
 h1, .alpha {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 h2, .beta {
     font-size: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 h3, .gamma {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 h4, .delta {
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
-.milli {}
+.milli {
+    font-size: 0.9rem;
+}
 
 
 
@@ -138,6 +165,7 @@ h4, .delta {
     float: right;
 }
 
+
 .mast--mobile__logo {}
 
 .mast--mobile__nav {}
@@ -160,6 +188,13 @@ h4, .delta {
 
 .primary-nav__list a {
     padding: 0.8rem;
+
+}
+
+
+.primary-nav__list--link-style a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 
@@ -167,30 +202,67 @@ h4, .delta {
 
 
 /*------------------------------------*\
-    #F-Main
+    #F-Hero
 \*------------------------------------*/
 
-main {}
+.hero {
+    margin-top: 9%;
+    padding-bottom: 12%;
+}
 
-.main--left-align {}
-
-
-.main--center-align {}
-
-
-.main--two-col {}
-
-.main--two-col__left {}
-
-.main--two-col__right {}
 
 
 
 /*------------------------------------*\
-    #G-Footer
+    #G-Main
+\*------------------------------------*/
+
+main {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.main--left-align {
+    padding-left: 18%;
+    padding-right: 15%;
+}
+
+
+.main--center-align {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.main--two-col {
+    padding-left: 15%;
+    padding-right: 12%;
+}
+
+.main--two-col__left {
+    display: block;
+    margin-right: 40%;
+}
+
+.main--two-col__right {
+    display: block;
+    float: right;
+    width: 40%;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #H-Footer
 \*------------------------------------*/
 
 footer {
+    text-align: center;
+    padding: 1.5%;
     margin-bottom: 0;
 }
 
@@ -198,17 +270,17 @@ footer {
 
 
 /*------------------------------------*\
-    #H-Buttons
+    #I-Buttons
 \*------------------------------------*/
 
 .button {
-    border: 0.1em none;
+    border: 0.1rem none;
     border-radius: 20em;
     padding: 1em 1.4em;
 }
 
 
-.button--header-text {
+.button--header-text { /* TODO: This is not working on nav button */
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1px;
@@ -227,7 +299,7 @@ footer {
 
 .button--white {
     background-color: transparent;
-    border: solid;
+    border: 0.1rem solid;
 }
 
     .button--white:hover {
@@ -240,5 +312,5 @@ footer {
 
 
 /*------------------------------------*\
-    #H-Definition-lists (does this need to exist?)
+    #J-Definition-lists (does this need to exist?)
 \*------------------------------------*/
