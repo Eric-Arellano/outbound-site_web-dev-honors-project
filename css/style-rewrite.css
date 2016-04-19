@@ -16,7 +16,7 @@
 
 
 /*------------------------------------*\
-    #A-General
+    #A-General & Margins
 \*------------------------------------*/
 
 html {
@@ -26,7 +26,8 @@ html {
 
 
 h1, h2, h3, h4,
-.alpha, .beta, .gamma, .delta
+.alpha, .beta, .gamma, .delta,
+.giga, .mega, .kilo, .milli
 ul, dl, dd, dt
 p {
     margin-bottom: 1rem;
@@ -34,12 +35,17 @@ p {
 
     li {
         margin-bottom: 0.2rem;
-        margin-left: 2.5rem;
+
     }
 
     p, ul {
         padding-bottom: 1rem;
     }
+
+
+p {
+    line-height: 130%;
+}
 
 
 .hover-transition {
@@ -53,8 +59,6 @@ p {
 /*------------------------------------*\
     #B-Headings
 \*------------------------------------*/
-
-
 
 .giga {
     font-size: 4rem;
@@ -103,9 +107,26 @@ h4, .delta {
     font-size: 0.9rem;
 }
 
-p {
-    line-height: 130%;
+
+
+
+
+/*------------------------------------*\
+    #C-Special Text
+\*------------------------------------*/
+
+.header--italic {
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+    text-transform: none;
 }
+
+.header--no-bold {
+    font-weight: normal;
+}
+
+
 
 
 
@@ -125,6 +146,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
     color: #FFFDF9;
 }
 
@@ -171,7 +193,7 @@ p {
 \*------------------------------------*/
 
 .mast {
-    padding-top: 2%;
+    padding-top: 3%;
     padding-left: 2%;
     padding-right: 2%;
 }
@@ -183,6 +205,7 @@ p {
 
 
 .mast__nav {
+    padding-top: 1%;
     text-align: right;
     float: right;
 }
@@ -201,7 +224,7 @@ p {
 \*------------------------------------*/
 
 .primary-nav {
-    margin: 1rem;
+    margin: .1rem;
 }
 
 .primary-nav__list li {
@@ -209,7 +232,7 @@ p {
 }
 
 .primary-nav__list a {
-    padding: .9rem;
+    padding: 1rem 1.4rem;
 }
 
 
@@ -229,6 +252,7 @@ p {
 .hero {
     margin-top: 9%;
     padding-bottom: 12%;
+    text-align: center;
 }
 
 
@@ -263,6 +287,8 @@ main {
     padding-right: 12%;
 }
 
+@media only screen and (min-width: 64em) {
+
     .main--two-col__left {
         display: block;
         margin-right: 40%;
@@ -273,6 +299,8 @@ main {
         float: right;
         width: 25%;
     }
+}
+
 
 
 
@@ -284,7 +312,8 @@ main {
 
 footer {
     text-align: center;
-    padding: 1.5%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     margin-bottom: 0;
 }
 
@@ -302,10 +331,10 @@ footer {
 }
 
 
-.button--header-text { /* TODO: This is not working on nav button */
+.button--header-text { /* TODO: This is not working on nav button, specificity conflict with ul class */
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 5px;
 }
 
 
@@ -334,5 +363,29 @@ footer {
 
 
 /*------------------------------------*\
-    #J-Definition-lists (does this need to exist?)
+    #J-Mobile
 \*------------------------------------*/
+
+@media only screen and (max-width: 40em) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media only screen and (max-width: 45em) {
+    html {
+        font-size: 77.5%;
+    }
+}
+
+@media only screen and (max-width: 64em) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media only screen and (min-width: 90em) {
+    html {
+        font-size: 200%;
+    }
+}
