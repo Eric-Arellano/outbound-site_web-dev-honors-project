@@ -1,15 +1,17 @@
 /**
  * CONTENTS
  *
- * #A-General                             17
- * #B-Headings                            29
- * #C-Page (backgrounds)                  89
- * #D-Masthead                            146
- * #E-Primary-nav                         176
- * #F-Hero                                204
- * #F-Main                                215
- * #G-Footer                              259
- * #H-Buttons                             272
+ * #A-General & Margins                   20
+ * #B-Headings                            61
+ * #C-Special Text                        116
+ * #D-Page (backgrounds)                  135
+ * #E-Masthead                            193
+ * #F-Primary-nav                         224
+ * #G-Hero                                250
+ * #H-Main                                272
+ * #I-Footer                              320
+ * #J-Buttons                             334
+ * #K-Responsive-Text                     376
  */
 
 
@@ -174,6 +176,10 @@ h4, .delta {
         color: #31A3A3;
     }
 
+    .page--black .mast a {
+        color: #FFFDF9
+    }
+
 
 .page--black--tan-text {
         background-color: #212525;
@@ -256,7 +262,16 @@ h4, .delta {
 }
 
 
+.hero .button {
+    margin: 1em;
+}
 
+
+@media only screen and (max-width: 45em) {
+    .hero .button {
+        display: block;
+    }
+}
 
 /*------------------------------------*\
     #G-Main
@@ -363,7 +378,7 @@ footer {
 
 
 /*------------------------------------*\
-    #J-Mobile
+    #J-Responsive-Text
 \*------------------------------------*/
 
 @media only screen and (max-width: 40em) {
@@ -378,13 +393,19 @@ footer {
     }
 }
 
-@media only screen and (max-width: 64em) {
+@media only screen and (max-width: 66em) {
     html {
         font-size: 85%;
     }
 }
 
-@media only screen and (min-width: 90em) {
+@media only screen and (min-width: 80em) {
+    html {
+        font-size: 120%;
+    }
+}
+
+@media only screen and (min-width: 110em) {
     html {
         font-size: 200%;
     }
