@@ -99,6 +99,8 @@ h2, .beta {
 
 h3, .gamma {
     font-size: 1.5rem;
+    text-transform: none;
+    text-align: left;
 }
 
 h4, .delta {
@@ -378,7 +380,27 @@ footer {
 
 
 /*------------------------------------*\
-    #J-Responsive-Text
+    #J-Forms
+\*------------------------------------*/
+
+input[type="text"], input[type="email"],
+textarea {
+    display: block;
+}
+
+.form__list {
+    list-style-type: none;
+}
+
+legend {
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+
+
+/*------------------------------------*\
+    #K-Responsive-Text
 \*------------------------------------*/
 
 @media only screen and (max-width: 40em) {

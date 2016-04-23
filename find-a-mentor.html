@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" lang="en">
+    <title>OutBound | Find a Mentor | Coming Out Resource</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset-1.6.1.css">
+    <link rel="stylesheet" href="css/style-rewrite.css">
+</head>
+
+
+
+
+<body class="page">
+
+
+    <div class="page--black">
+
+        <header class="mast">
+
+            <div class="mast__logo">
+                <h1 class="beta"><a href="home.html">OutBound</a></h1>
+            </div>
+
+
+            <nav class="mast__nav">
+                <ul class="primary-nav__list  primary-nav__list--link-style  milli">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="mentors.html">Our Mentors</a></li>
+                    <li><a href="resources.html">Resources and Guides</a></li>
+                    <li><a class="button  button--white  hover-transition"
+                        href="home.html">Connect</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+    </div>
+
+
+
+
+    <div class="page--white">
+
+        <main class="main--left-align">
+
+            <header>
+
+                <h2 class="gamma">Find a Mentor</h2>
+
+                <p>After submitting this form, we'll begin to find a mentor
+                    who went through a similar experience as you. Check your
+                    email for next steps.</p>
+
+            </header>
+
+
+
+
+            <form action="#" name="form-mentee" id="form-mentee"
+                autocomplete="on">
+
+
+                <fieldset>
+                    <legend>Demographic Info</legend>
+
+                    <label for="name--first">Preferred first name: </label>
+                    <input type="text" name="name--first" id="name--first">
+
+                    <label for="age">Age: </label>
+                    <input type="text" name="age" id="age">
+
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+
+                </fieldset>
+
+
+
+                <fieldset>
+                    <legend>LGBTQ Identity</legend>
+
+                    <label>Which gender(s) do you most identify with?</label>
+                    <ul class="form__list">
+                        <li>
+                            <input type="checkbox" name="gender--male"
+                            id="gender--male">
+                            <label for="gender--male">Male</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="gender--female"
+                            id="gender--female">
+                            <label for="gender--female">Female</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="gender--queer"
+                            id="gender--queer">
+                            <label for="gender--queer">Gender-queer</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="gender--trans-mtf"
+                            id="gender--trans-mtf">
+                            <label for="gender--trans-mtf">Transgender
+                                male-to-female</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="gender--trans-ftm"
+                            id="gender--trans-ftm">
+                            <label for="gender--trans-ftm">Transgender
+                                female-to-male</label>
+                        </li>
+                        <li>
+                            <input type="text" value="Other"
+                            name="gender--other" id="gender--other">
+                        </li>
+                    </ul>
+
+
+                    <label>Who are you attracted to?</label>
+                    <ul class="form__list">
+                        <li>
+                            <input type="checkbox" name="attraction--males"
+                            id="attraction--males">
+                            <label for="attraction--males">Males</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="attraction--females"
+                            id="attraction--females">
+                            <label for="attraction--females">Females</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="attraction--quer"
+                            id="attraction--queer">
+                            <label for="attraction--queer">Gender doesn't matter
+                            </label>
+                        </li>
+                        <li>
+                            <input type="text" value="Other"
+                            name="attraction--other" id="attraction--other">
+                        </li>
+                    </ul>
+
+                </fieldset>
+
+
+
+                <fieldset>
+                    <legend>Coming Out</legend>
+
+                    <label>What are you coming out about?</label>
+                    <ul class="form__list">
+                        <li>
+                            <input type="checkbox" name="coming-out--orientation"
+                            id="coming-out--orientation">
+                            <label for="coming-out--orientation">Sexual
+                                orientation</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="coming-out--gender"
+                            id="coming-out--gender">
+                            <label for="coming-out--gender">Gender
+                                Identity</label>
+                        </li>
+                        <li>
+                            <input type="text" value="Other"
+                            name="coming-out--other" id="coming-out--other">
+                        </li>
+                    </ul>
+
+
+                    <label>Rate what you think will be an obstacle when coming
+                        out (0 means not an obstacle, and 3 means major
+                        barrier):</label>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th id="table--obstacle">Obstacle</th>
+                                <th id="table--0">0</th>
+                                <th id="table--1">1</th>
+                                <th id="table--2">2</th>
+                                <th id="table--3">3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td headers="table--obstacle">Family</td>
+                                <td headers="table--0"><input type="radio"
+                                    value="0" name="family"/></td>
+                                <td headers="table--1"><input type="radio"
+                                    value="1" name="family"/></td>
+                                <td headers="table--2"><input type="radio"
+                                    value="2" name="family"/></td>
+                                <td headers="table--3"><input type="radio"
+                                    value="3" name="family"/></td>
+                            </tr>
+                            <tr>
+                                <td headers="table--obstacle">Friends</td>
+                                <td headers="table--0"><input type="radio"
+                                    value="0" name="friends"/></td>
+                                <td headers="table--1"><input type="radio"
+                                    value="1" name="friends"/></td>
+                                <td headers="table--2"><input type="radio"
+                                    value="2" name="friends"/></td>
+                                <td headers="table--3"><input type="radio"
+                                    value="3" name="friends"/></td>
+                            </tr>
+                            <tr>
+                                <td headers="table--obstacle">Community</td>
+                                <td headers="table--0"><input type="radio"
+                                    value="0" name="community"/></td>
+                                <td headers="table--1"><input type="radio"
+                                    value="1" name="community"/></td>
+                                <td headers="table--2"><input type="radio"
+                                    value="2" name="community"/></td>
+                                <td headers="table--3"><input type="radio"
+                                    value="3" name="community"/></td>
+                            </tr>
+                            <tr>
+                                <td headers="table--obstacle">Safety</td>
+                                <td headers="table--0"><input type="radio"
+                                    value="0" name="safety"/></td>
+                                <td headers="table--1"><input type="radio"
+                                    value="1" name="safety"/></td>
+                                <td headers="table--2"><input type="radio"
+                                    value="2" name="safety"/></td>
+                                <td headers="table--3"><input type="radio"
+                                    value="3" name="safety"/></td>
+                            </tr>
+                            <tr>
+                                <td headers="table--obstacle">Religion</td>
+                                <td headers="table--0"><input type="radio"
+                                    value="0" name="religion"/></td>
+                                <td headers="table--1"><input type="radio"
+                                    value="1" name="religion"/></td>
+                                <td headers="table--2"><input type="radio"
+                                    value="2" name="religion"/></td>
+                                <td headers="table--3"><input type="radio"
+                                    value="3" name="religion"/></td>
+                            </tr>
+                            <tr>
+                                <td headers="table--obstacle">Culture</td>
+                                <td headers="table--0"><input type="radio"
+                                    value="0" name="culture"/></td>
+                                <td headers="table--1"><input type="radio"
+                                    value="1" name="culture"/></td>
+                                <td headers="table--2"><input type="radio"
+                                    value="2" name="culture"/></td>
+                                <td headers="table--3"><input type="radio"
+                                    value="3" name="culture"/></td>
+                            </tr>
+                            <tr>
+                                <td headers="table--obstacle">Personal</td>
+                                <td headers="table--0"><input type="radio"
+                                    value="0" name="personal"/></td>
+                                <td headers="table--1"><input type="radio"
+                                    value="1" name="personal"/></td>
+                                <td headers="table--2"><input type="radio"
+                                    value="2" name="personal"/></td>
+                                <td headers="table--3"><input type="radio"
+                                    value="3" name="personal"/></td>
+                            </tr>
+                            <tr>
+                                <td headers="table--obstacle"><input type="text"
+                                    value="Other" name="other"></td>
+                                <td headers="table--0"><input type="radio"
+                                    value="0" name="other"/></td>
+                                <td headers="table--1"><input type="radio"
+                                    value="1" name="other"/></td>
+                                <td headers="table--2"><input type="radio"
+                                    value="2" name="other"/></td>
+                                <td headers="table--3"><input type="radio"
+                                    value="3" name="other"/></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </fieldset>
+
+
+
+                <fieldset>
+                    <legend>Your Background</legend>
+
+                    <label for="zip">Zip code: </label>
+                    <input type="text" name="zip" id="zip">
+
+                    <label>What type of city do you live in?</label>
+                    <ul class="form__list">
+                        <li>
+                            <input type="radio" name="town--rural"
+                            id="town--rural">
+                            <label for="town--rural">Rural</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="town--suburban"
+                            id="town--suburban">
+                            <label for="town--suburban">Suburban</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="town--urban"
+                            id="town--urban">
+                            <label for="town--urban">Urban</label>
+                        </li>
+                    </ul>
+
+                    <label for="family-structure">Who do you live with? </label>
+                    <input type="text" name="family-structure"
+                        id="family-structure"/>
+
+                    <label>Personal religious beliefs:</label>
+                    <ul class="form__list">
+                        <li>
+                            <input type="radio" name="religion--personal--none"
+                            id="religion--personal--none">
+                            <label for="religion--personal--none">
+                                Unaffiliated</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="religion--personal--christian"
+                            id="religion--personal--christian">
+                            <label for="religion--personal--christian">
+                                Protestant Christian</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="religion--personal--catholic"
+                            id="religion--personal--catholic">
+                            <label for="religion--personal--catholic">
+                                Catholic Christian</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="religion--personal--muslim"
+                            id="religion--personal--muslim">
+                            <label for="religion--personal--muslim">
+                                Muslim</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="religion--personal--jew"
+                            id="religion--personal--jew">
+                            <label for="religion--personal--jew">
+                                Jewish</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="religion--personal--hindu"
+                            id="religion--personal--hindu">
+                            <label for="religion--personal--hindu">
+                                Hindu</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="religion--personal--buddhist"
+                            id="religion--personal--buddhist">
+                            <label for="religion--personal--buddhist">
+                                Buddhist</label>
+                        </li>
+                        <li>
+                            <input type="text" value="Other"
+                            name="religion--personal--other"
+                            id="religion--personal--other">
+                        </li>
+                    </ul>
+
+
+                    <label>Religious background:</label>
+                    <ul class="form__list">
+                        <li>
+                            <input type="checkbox" name="religion--background--none"
+                            id="religion--background--none">
+                            <label for="religion--background--none">
+                                Unaffiliated</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="religion--background--christian"
+                            id="religion--background--christian">
+                            <label for="religion--background--christian">
+                                Protestant Christian</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="religion--background--catholic"
+                            id="religion--background--catholic">
+                            <label for="religion--background--catholic">
+                                Catholic Christian</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="religion--background--muslim"
+                            id="religion--background--muslim">
+                            <label for="religion--background--muslim">
+                                Muslim</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="religion--background--jew"
+                            id="religion--background--jew">
+                            <label for="religion--background--jew">
+                                Jewish</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="religion--background--hindu"
+                            id="religion--background--hindu">
+                            <label for="religion--background--hindu">
+                                Hindu</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="religion--background--buddhist"
+                            id="religion--background--buddhist">
+                            <label for="religion--background--buddhist">
+                                Buddhist</label>
+                        </li>
+                        <li>
+                            <input type="text" value="Other"
+                            name="religion--background--other"
+                            id="religion--background--other">
+                        </li>
+                    </ul>
+
+
+                    <label>Cultural background: </label>
+                    <ul class="form__list">
+                        <li>
+                            <input type="checkbox" name="culture--white"
+                            id="culture--white">
+                            <label for="culture--white">White</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="culture--hispanic"
+                            id="culture--hispanic">
+                            <label for="culture--hispanic">Hispanic</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="culture--black"
+                            id="culture--black">
+                            <label for="culture--black">Black</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="culture--east-asian"
+                            id="culture--east-asian">
+                            <label for="culture--east-asian">East Asian</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="culture--south-asian"
+                            id="culture--south-asian">
+                            <label for="culture--south-asian">South Asian</label>
+                        </li>
+                        <li>
+                            <input type="text" value="Other"
+                            name="culture--other" id="culture--other">
+                        </li>
+                    </ul>
+
+                    <label>Communities you're involved with: </label>
+                    <ul class="form__list">
+                        <li>
+                            <input type="checkbox" name="communities--school"
+                            id="communities--school">
+                            <label for="communities--school">School</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="communities--sports"
+                            id="communities--sports">
+                            <label for="communities--sports">Sports</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="communities--music"
+                            id="communities--music">
+                            <label for="communities--music">Music</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="communities--performing-arts"
+                            id="communities--performing-arts">
+                            <label for="communities--performing-arts">Performing
+                                Arts</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="communities--work"
+                            id="communities--work">
+                            <label for="communities--work">Work</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="communities--religion"
+                            id="communities--religion">
+                            <label for="communities--religion">Religious group</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="communities--volunteer"
+                            id="communities--volunteer">
+                            <label for="communities--volunteer">Volunteering</label>
+                        </li>
+                        <li>
+                            <input type="text" value="Other, e.g. gaming"
+                            name="communities--other" id="communities--other">
+                        </li>
+                    </ul>
+
+                </fieldset>
+
+
+
+
+                <fieldset>
+                    <legend>Additional Info</legend>
+
+                    <label for="additional-info">Is there anything else you'd
+                        like us to know? </label>
+                    <textarea name="additional-info" id="additional-info">
+                    </textarea>
+
+                    <label for="feedback">How could we me make this form better?
+                    </label>
+                    <textarea name="feedback" id="feedback"></textarea>
+
+                </fieldset>
+
+
+
+
+                <input type="submit">
+
+
+            </form>
+
+
+
+        </main>
+
+    </div>
+
+
+
+
+    <footer class="page--black--tan-text">
+        <p>Designed and created by
+            <a href="https://www.linkedin.com/in/arellanoeric">
+                Eric Arellano</a>.</p>
+    </footer>
+
+
+</body>
