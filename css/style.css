@@ -23,7 +23,8 @@
 
 html {
     font-size: 120%;
-    font-family: Times New Roman, serif;
+    font-family: Bodoni MT Condensed, Times New Roman, serif;
+        /* TODO: Bodoni doesn't work */
 }
 
 
@@ -255,6 +256,9 @@ h4, .delta {
 }
 
 
+.primary-nav--selected {
+    font-weight: bold;
+}
 
 
 
@@ -293,14 +297,14 @@ h4, .delta {
 \*------------------------------------*/
 
 main {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 4%;
+    margin-bottom: 3%;
 }
 
 
 .main--left-align {
-    padding-left: 18%;
-    padding-right: 15%;
+    padding-left: 12%;
+    padding-right: 14%;
 }
 
 
@@ -313,21 +317,21 @@ main {
 
 
 .main--two-col {
-    padding-left: 15%;
-    padding-right: 12%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 @media only screen and (min-width: 64em) {
 
     .main--two-col__left {
         display: block;
-        margin-right: 40%;
+        margin-right: 45%;
     }
 
     .main--two-col__right {
         display: block;
         float: right;
-        width: 25%;
+        width: 35%;
     }
 }
 
@@ -342,8 +346,8 @@ main {
 
 footer {
     text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: .6rem;
     margin-bottom: 0;
 }
 
@@ -367,7 +371,7 @@ footer {
 }
 
 
-.button--header-text { /* TODO: This is not working on nav button, specificity conflict with ul class */
+.button--header-text {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
@@ -435,7 +439,24 @@ legend {
 
 
 /*------------------------------------*\
-    #K-Responsive-Text
+    #K-Multimedia
+\*------------------------------------*/
+
+video {
+    width: 26rem;
+    height: 17rem;
+}
+
+@media only screen and (max-width: 45em) {
+
+    video {
+        display: none;
+    }
+}
+
+
+/*------------------------------------*\
+    #L-Responsive-Text
 \*------------------------------------*/
 
 @media only screen and (max-width: 40em) {
