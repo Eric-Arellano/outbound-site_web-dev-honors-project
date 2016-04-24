@@ -14,7 +14,7 @@
  * #K-Buttons                             386
  * #L-Forms                               444
  * #M-Multimedia                          465
- * #L-Responsive-Text                     482
+ * #N-Responsive-Text                     482
  */
 
 
@@ -34,15 +34,11 @@ h1, h2, h3, h4,
 .alpha, .beta, .gamma, .delta,
 .giga, .mega, .kilo, .milli
 ul, dl, dd, dt
-fieldset, legend, label, input, textarea,
-video  {
+fieldset, legend, label, textarea,
+table,
+video {
     margin-bottom: 1rem;
 }
-
-    li {
-        margin-bottom: 0.2rem;
-
-    }
 
     ul, dt, dd {
         padding-bottom: 1rem;
@@ -123,7 +119,8 @@ h2, .beta {
     text-align: center;
 }
 
-h3, .gamma {
+h3, .gamma,
+legend {
     font-size: 1.5rem;
     text-transform: none;
     text-align: left;
@@ -162,10 +159,15 @@ dt {
     text-align: center;
 }
 
+.left {
+    text-align: left;
+}
+
 
 .list li {
     margin-left: 2em;
     padding-left: 0.5em;
+    margin-bottom: 0.3rem;
 }
 
 
@@ -384,7 +386,29 @@ footer {
 
 
 /*------------------------------------*\
-    #K-Buttons
+    #K-Tables
+\*------------------------------------*/
+
+th, tr, td {
+    padding: 0.4em 1em;
+}
+
+th {
+    border-bottom: 0.1em solid #212525;
+}
+
+td:first-child {
+    border-right: 0.1em solid #212525;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(33, 33, 37, 0.05);
+}
+
+
+
+/*------------------------------------*\
+    #L-Buttons
 \*------------------------------------*/
 
 .button {
@@ -445,22 +469,66 @@ footer {
     #L-Forms
 \*------------------------------------*/
 
-input[type="text"], input[type="email"],
-textarea {
-    display: inline;
+input {
+    font-size: 80%;
 }
+
+label {
+    display: block;
+}
+
+input[type="text"], input[type="email"]
+textarea {
+    padding: 0.4em;
+}
+
+textarea {
+    width: 50em;
+    height: 10em;
+    resize: none;
+}
+
+.input--align-right {
+    margin-left: 2em;
+}
+
 
 .form__list {
     list-style-type: none;
 }
 
-legend {
-    font-weight: bold;
+
+.input--small {
+    width: 2.5em;
+}
+
+.input--medium {
+    width: 7em;
+}
+
+.input--large {
+    width: 12em;
 }
 
 
+/*@media only screen and (min-width: 64em) {
 
+    .form--two-col {
+        clear: both;
+    }
 
+    .form--two-col__left {
+        display: block;
+        float: left;
+    }
+
+    .form--two-col__right {
+        position: relative;
+        display: block;
+        float: left;
+        margin-left: 10%;
+    }
+}*/
 
 /*------------------------------------*\
     #M-Multimedia

@@ -49,7 +49,7 @@
 
             <header>
 
-                <h2 class="gamma">Find a Mentor</h2>
+                <h2 class="left">Find a Mentor</h2>
 
                 <p>After submitting this form, we'll begin to find a mentor
                     who went through a similar experience as you. Check your
@@ -67,14 +67,17 @@
                 <fieldset>
                     <legend>Demographic Info</legend>
 
-                    <label for="name--first">Preferred first name: </label>
-                    <input type="text" name="name--first" id="name--first">
+                    <label>Preferred first name:
+                    <input type="text" name="name--first" id="name--first"
+                        class="input--medium  input--align-right"></label>
 
-                    <label for="age">Age: </label>
-                    <input type="text" name="age" id="age">
+                    <label>Age:
+                    <input type="text" name="age" id="age"
+                        class="input--small  input--align-right"></label>
 
-                    <label for="email">Email: </label>
-                    <input type="email" name="email" id="email">
+                    <label>Email:
+                    <input type="email" name="email" id="email"
+                        class="input--large  input--align-right"></label>
 
                 </fieldset>
 
@@ -84,37 +87,40 @@
                     <legend>LGBTQ Identity</legend>
 
                     <label>Which gender(s) do you most identify with?</label>
-                    <ul class="form__list">
-                        <li>
-                            <input type="checkbox" name="gender--male"
+                    <ul class="form__list  form--two-col">
+                        <li class="form--two-col__left">
+                            <label>
+                            <input type="checkbox" name="gender"
                             id="gender--male">
-                            <label for="gender--male">Male</label>
+                            Male</label>
                         </li>
-                        <li>
-                            <input type="checkbox" name="gender--female"
+                        <li class="form--two-col__left">
+                            <label>
+                            <input type="checkbox" name="gender"
                             id="gender--female">
-                            <label for="gender--female">Female</label>
+                            Female</label>
                         </li>
-                        <li>
-                            <input type="checkbox" name="gender--queer"
-                            id="gender--queer">
-                            <label for="gender--queer">Gender-queer</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="gender--trans-mtf"
+                        <li class="form--two-col__right">
+                            <label>
+                            <input type="checkbox" name="gender"
                             id="gender--trans-mtf">
-                            <label for="gender--trans-mtf">Transgender
-                                male-to-female</label>
+                            Transgender male-to-female</label>
                         </li>
-                        <li>
-                            <input type="checkbox" name="gender--trans-ftm"
+                        <li class="form--two-col__right">
+                            <label>
+                            <input type="checkbox" name="gender"
+                            id="gender--queer">
+                            Gender-queer</label>
+                        </li>
+                        <li class="form--two-col__right">
+                            <label>
+                            <input type="checkbox" name="gender"
                             id="gender--trans-ftm">
-                            <label for="gender--trans-ftm">Transgender
-                                female-to-male</label>
+                            Transgender female-to-male</label>
                         </li>
-                        <li>
-                            <input type="text" value="Other"
-                            name="gender--other" id="gender--other">
+                        <li class="form--two-col__left">
+                            <input type="text" value="Other" class="input--large"
+                            name="gender" id="gender--other"></label>
                         </li>
                     </ul>
 
@@ -122,29 +128,32 @@
                     <label>Who are you attracted to?</label>
                     <ul class="form__list">
                         <li>
-                            <input type="checkbox" name="attraction--males"
+                            <label>
+                            <input type="checkbox" name="attraction"
                             id="attraction--males">
-                            <label for="attraction--males">Males</label>
+                             Males</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="attraction--females"
+                            <label>
+                            <input type="checkbox" name="attraction"
                             id="attraction--females">
-                            <label for="attraction--females">Females</label>
+                            Females</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="attraction--queer"
+                            <label>
+                            <input type="checkbox" name="attraction"
                             id="attraction--queer">
-                            <label for="attraction--queer">Gender doesn't matter
-                            </label>
+                            Gender doesn't matter</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="attraction--none"
+                            <label>
+                            <input type="checkbox" name="attraction"
                             id="attraction--none">
-                            <label for="attraction--none">Asexual</label>
+                            No one (asexual)</label>
                         </li>
                         <li>
-                            <input type="text" value="Other"
-                            name="attraction--other" id="attraction--other">
+                            <input type="text" value="Other" class="input--large"
+                            name="attraction" id="attraction--other">
                         </li>
                     </ul>
 
@@ -158,16 +167,16 @@
                     <label>What are you coming out about?</label>
                     <ul class="form__list">
                         <li>
-                            <input type="checkbox" name="coming-out--orientation"
+                            <label>
+                            <input type="checkbox" name="coming-out"
                             id="coming-out--orientation">
-                            <label for="coming-out--orientation">Sexual
-                                orientation</label>
+                            Sexual orientation</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="coming-out--gender"
+                            <label>
+                            <input type="checkbox" name="coming-out"
                             id="coming-out--gender">
-                            <label for="coming-out--gender">Gender
-                                identity</label>
+                            Gender identity</label>
                         </li>
                     </ul>
 
@@ -265,7 +274,8 @@
                             </tr>
                             <tr>
                                 <td headers="table--obstacle"><input type="text"
-                                    value="Other" name="other"></td>
+                                    class="input--medium" value="Other"
+                                    name="other"></td>
                                 <td headers="table--0"><input type="radio"
                                     value="0" name="other"/></td>
                                 <td headers="table--1"><input type="radio"
@@ -286,81 +296,86 @@
                 <fieldset>
                     <legend>Your Background</legend>
 
-                    <label for="zip">Zip code: </label>
-                    <input type="text" name="zip" id="zip">
+                    <label>Zip code:
+                    <input type="text" name="zip" id="zip"
+                    class="input--small  input--align-right"></label>
 
                     <label>What type of city do you live in?</label>
                     <ul class="form__list">
                         <li>
-                            <input type="radio" name="town--rural"
+                            <label>
+                            <input type="radio" name="town"
                             id="town--rural">
-                            <label for="town--rural">Rural</label>
+                            Rural</label>
                         </li>
 
                         <li>
-                            <input type="radio" name="town--suburban"
+                            <label>
+                            <input type="radio" name="town"
                             id="town--suburban">
-                            <label for="town--suburban">Suburban</label>
+                            Suburban</label>
                         </li>
 
                         <li>
-                            <input type="radio" name="town--urban"
+                            <label>
+                            <input type="radio" name="town"
                             id="town--urban">
-                            <label for="town--urban">Urban</label>
+                            Urban</label>
                         </li>
                     </ul>
 
-                    <label for="family-structure">Who do you live with? </label>
-                    <input type="text" name="family-structure"
-                        id="family-structure"/>
+                    <label>Who do you live with?
+                    <input type="text" class="input--large  input--align-right"
+                        name="family-structure" id="family-structure"/>
+                    </label>
 
                     <label>Personal religious beliefs:</label>
                     <ul class="form__list">
                         <li>
-                            <input type="radio" name="religion--personal--none"
+                            <label>
+                            <input type="radio" name="religion--personal"
                             id="religion--personal--none">
-                            <label for="religion--personal--none">
-                                Unaffiliated</label>
+                            Unaffiliated</label>
                         </li>
                         <li>
-                            <input type="radio" name="religion--personal--christian"
+                            <label>
+                            <input type="radio" name="religion--personal"
                             id="religion--personal--christian">
-                            <label for="religion--personal--christian">
-                                Protestant Christian</label>
+                            Protestant Christian</label>
                         </li>
                         <li>
-                            <input type="radio" name="religion--personal--catholic"
+                            <label>
+                            <input type="radio" name="religion--personal"
                             id="religion--personal--catholic">
-                            <label for="religion--personal--catholic">
-                                Catholic Christian</label>
+                            Catholic Christian</label>
                         </li>
                         <li>
-                            <input type="radio" name="religion--personal--muslim"
+                            <label>
+                            <input type="radio" name="religion--personal"
                             id="religion--personal--muslim">
-                            <label for="religion--personal--muslim">
-                                Muslim</label>
+                            Muslim</label>
                         </li>
                         <li>
-                            <input type="radio" name="religion--personal--jew"
+                            <label>
+                            <input type="radio" name="religion--personal"
                             id="religion--personal--jew">
-                            <label for="religion--personal--jew">
-                                Jewish</label>
+                            Jewish</label>
                         </li>
                         <li>
-                            <input type="radio" name="religion--personal--hindu"
+                            <label>
+                            <input type="radio" name="religion--personal"
                             id="religion--personal--hindu">
-                            <label for="religion--personal--hindu">
-                                Hindu</label>
+                            Hindu</label>
                         </li>
                         <li>
-                            <input type="radio" name="religion--personal--buddhist"
+                            <label>
+                            <input type="radio" name="religion--personal"
                             id="religion--personal--buddhist">
-                            <label for="religion--personal--buddhist">
-                                Buddhist</label>
+                            Buddhist</label>
                         </li>
                         <li>
                             <input type="text" value="Other"
-                            name="religion--personal--other"
+                            name="religion--personal"
                             id="religion--personal--other">
                         </li>
                     </ul>
@@ -369,50 +384,50 @@
                     <label>Religious background:</label>
                     <ul class="form__list">
                         <li>
-                            <input type="checkbox" name="religion--background--none"
+                            <label>
+                            <input type="radio" name="religion--background"
                             id="religion--background--none">
-                            <label for="religion--background--none">
-                                Unaffiliated</label>
+                            Unaffiliated</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="religion--background--christian"
+                            <label>
+                            <input type="radio" name="religion--background"
                             id="religion--background--christian">
-                            <label for="religion--background--christian">
-                                Protestant Christian</label>
+                            Protestant Christian</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="religion--background--catholic"
+                            <label>
+                            <input type="radio" name="religion--background"
                             id="religion--background--catholic">
-                            <label for="religion--background--catholic">
-                                Catholic Christian</label>
+                            Catholic Christian</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="religion--background--muslim"
+                            <label>
+                            <input type="radio" name="religion--background"
                             id="religion--background--muslim">
-                            <label for="religion--background--muslim">
-                                Muslim</label>
+                            Muslim</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="religion--background--jew"
+                            <label>
+                            <input type="radio" name="religion--background"
                             id="religion--background--jew">
-                            <label for="religion--background--jew">
-                                Jewish</label>
+                            Jewish</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="religion--background--hindu"
+                            <label>
+                            <input type="radio" name="religion--background"
                             id="religion--background--hindu">
-                            <label for="religion--background--hindu">
-                                Hindu</label>
+                            Hindu</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="religion--background--buddhist"
+                            <label>
+                            <input type="radio" name="religion--background"
                             id="religion--background--buddhist">
-                            <label for="religion--background--buddhist">
-                                Buddhist</label>
+                            Buddhist</label>
                         </li>
                         <li>
                             <input type="text" value="Other"
-                            name="religion--background--other"
+                            name="religion--background"
                             id="religion--background--other">
                         </li>
                     </ul>
@@ -421,77 +436,88 @@
                     <label>Cultural background: </label>
                     <ul class="form__list">
                         <li>
-                            <input type="checkbox" name="culture--white"
+                            <label>
+                            <input type="checkbox" name="culture"
                             id="culture--white">
-                            <label for="culture--white">White</label>
+                            White</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="culture--hispanic"
+                            <label>
+                            <input type="checkbox" name="culture"
                             id="culture--hispanic">
-                            <label for="culture--hispanic">Hispanic</label>
+                            Hispanic</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="culture--black"
+                            <label>
+                            <input type="checkbox" name="culture"
                             id="culture--black">
-                            <label for="culture--black">Black</label>
+                            Black</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="culture--east-asian"
+                            <label>
+                            <input type="checkbox" name="culture"
                             id="culture--east-asian">
-                            <label for="culture--east-asian">East Asian</label>
+                            East Asian</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="culture--south-asian"
+                            <label>
+                            <input type="checkbox" name="culture"
                             id="culture--south-asian">
-                            <label for="culture--south-asian">South Asian</label>
+                            South Asian</label>
                         </li>
                         <li>
-                            <input type="text" value="Other"
-                            name="culture--other" id="culture--other">
+                            <input type="text" value="Other" name="culture"
+                            id="culture--other">
                         </li>
                     </ul>
 
                     <label>Communities you're involved with: </label>
                     <ul class="form__list">
                         <li>
-                            <input type="checkbox" name="communities--school"
+                            <label>
+                            <input type="checkbox" name="communities"
                             id="communities--school">
-                            <label for="communities--school">School</label>
+                            School</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="communities--sports"
+                            <label>
+                            <input type="checkbox" name="communities"
                             id="communities--sports">
-                            <label for="communities--sports">Sports</label>
+                            Sports</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="communities--music"
+                            <label>
+                            <input type="checkbox" name="communities"
                             id="communities--music">
-                            <label for="communities--music">Music</label>
+                            Music</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="communities--performing-arts"
+                            <label>
+                            <input type="checkbox" name="communities"
                             id="communities--performing-arts">
-                            <label for="communities--performing-arts">Performing
-                                Arts</label>
+                            Performing Arts</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="communities--work"
+                            <label>
+                            <input type="checkbox" name="communities"
                             id="communities--work">
-                            <label for="communities--work">Work</label>
+                            Work</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="communities--religion"
+                            <label>
+                            <input type="checkbox" name="communities"
                             id="communities--religion">
-                            <label for="communities--religion">Religious group</label>
+                            Religious group</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="communities--volunteer"
+                            <label>
+                            <input type="checkbox" name="communities"
                             id="communities--volunteer">
-                            <label for="communities--volunteer">Volunteering</label>
+                            Volunteering</label>
                         </li>
                         <li>
                             <input type="text" value="Other, e.g. gaming"
-                            name="communities--other" id="communities--other">
+                            name="communities" id="communities--other">
                         </li>
                     </ul>
 
@@ -516,8 +542,8 @@
 
 
 
-
-                <input type="submit">
+                <input type="submit" class="button--square  button--black
+                button--header-text">
 
 
             </form>
