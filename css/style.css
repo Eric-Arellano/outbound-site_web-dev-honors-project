@@ -1,17 +1,20 @@
 /**
  * CONTENTS
  *
- * #A-General & Margins                   20
- * #B-Headings                            61
- * #C-Special Text                        116
- * #D-Page (backgrounds)                  135
- * #E-Masthead                            193
- * #F-Primary-nav                         224
- * #G-Hero                                250
- * #H-Main                                272
- * #I-Footer                              320
- * #J-Buttons                             334
- * #K-Responsive-Text                     376
+ * #A-General & Margins                   23
+ * #B-Fonts                               60
+ * #C-Headings                            87
+ * #D-Special Text                        145
+ * #E-Page (backgrounds)                  175
+ * #F-Masthead                            237
+ * #G-Primary-nav                         262
+ * #H-Hero                                293
+ * #I-Main                                323
+ * #J-Footer                              371
+ * #K-Buttons                             386
+ * #L-Forms                               444
+ * #M-Multimedia                          465
+ * #L-Responsive-Text                     482
  */
 
 
@@ -23,16 +26,16 @@
 
 html {
     font-size: 120%;
-    font-family: Bodoni MT Condensed, Times New Roman, serif;
-        /* TODO: Bodoni doesn't work */
 }
 
 
+p,
 h1, h2, h3, h4,
 .alpha, .beta, .gamma, .delta,
 .giga, .mega, .kilo, .milli
 ul, dl, dd, dt
-p {
+fieldset, legend, label, input, textarea,
+video  {
     margin-bottom: 1rem;
 }
 
@@ -41,14 +44,9 @@ p {
 
     }
 
-    p, ul {
+    ul, dt, dd {
         padding-bottom: 1rem;
     }
-
-
-p {
-    line-height: 130%;
-}
 
 
 .hover-transition {
@@ -60,7 +58,34 @@ p {
 
 
 /*------------------------------------*\
-    #B-Headings
+    #B-Fonts
+\*------------------------------------*/
+
+h1, h2, h3, h4,
+.alpha, .beta, .gamma, .delta,
+.giga, .mega, .kilo, .milli,
+fieldset, legend,
+dt {
+    font-family: 'Crimson Text', serif;
+}
+
+p, ul,
+dd,
+label, input, textarea  {
+    font-family: 'Gill Sans', sans-serif;
+}
+
+
+p {
+    line-height: 130%;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #C-Headings
 \*------------------------------------*/
 
 .giga {
@@ -104,7 +129,8 @@ h3, .gamma {
     text-align: left;
 }
 
-h4, .delta {
+h4, .delta,
+dt {
     font-size: 1.25rem;
 }
 
@@ -117,14 +143,14 @@ h4, .delta {
 
 
 /*------------------------------------*\
-    #C-Special Text
+    #D-Special Text
 \*------------------------------------*/
 
 .header--italic {
     display: block;
     font-style: italic;
     font-weight: normal;
-    text-transform: none;
+    text-transform: none; /* fix font */
 }
 
 .header--no-bold {
@@ -147,7 +173,7 @@ h4, .delta {
 
 
 /*------------------------------------*\
-    #C-Page (backgrounds)
+    #E-Page (backgrounds)
 \*------------------------------------*/
 
 .page, body, html {
@@ -209,7 +235,7 @@ h4, .delta {
 
 
 /*------------------------------------*\
-    #D-Masthead
+    #F-Masthead
 \*------------------------------------*/
 
 .mast {
@@ -234,7 +260,7 @@ h4, .delta {
 
 
 /*------------------------------------*\
-    #E-Primary-nav
+    #G-Primary-nav
 \*------------------------------------*/
 
 .primary-nav {
@@ -262,8 +288,10 @@ h4, .delta {
 
 
 
+
+
 /*------------------------------------*\
-    #F-Hero
+    #H-Hero
 \*------------------------------------*/
 
 .hero {
@@ -293,7 +321,7 @@ h4, .delta {
 
 
 /*------------------------------------*\
-    #G-Main
+    #I-Main
 \*------------------------------------*/
 
 main {
@@ -341,13 +369,13 @@ main {
 
 
 /*------------------------------------*\
-    #H-Footer
+    #J-Footer
 \*------------------------------------*/
 
 footer {
     text-align: center;
     padding-top: 1.5rem;
-    padding-bottom: .6rem;
+    padding-bottom: .4rem;
     margin-bottom: 0;
 }
 
@@ -356,7 +384,7 @@ footer {
 
 
 /*------------------------------------*\
-    #I-Buttons
+    #K-Buttons
 \*------------------------------------*/
 
 .button {
@@ -414,16 +442,12 @@ footer {
 
 
 /*------------------------------------*\
-    #J-Forms
+    #L-Forms
 \*------------------------------------*/
-
-legend, label {
-    margin-bottom: 1em;
-}
 
 input[type="text"], input[type="email"],
 textarea {
-    display: block;
+    display: inline;
 }
 
 .form__list {
@@ -439,7 +463,7 @@ legend {
 
 
 /*------------------------------------*\
-    #K-Multimedia
+    #M-Multimedia
 \*------------------------------------*/
 
 video {
@@ -456,7 +480,7 @@ video {
 
 
 /*------------------------------------*\
-    #L-Responsive-Text
+    #N-Responsive-Text
 \*------------------------------------*/
 
 @media only screen and (max-width: 40em) {
