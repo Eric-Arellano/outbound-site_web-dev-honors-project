@@ -67,7 +67,8 @@ dt {
 
 p, ul,
 dd,
-label, input, textarea  {
+label, input, textarea
+th, td  {
     font-family: 'Gill Sans', 'Lato', sans-serif;
 }
 
@@ -239,6 +240,11 @@ dt {
 
 .mast {
     padding: 2% 2% 1%;
+}
+
+
+.mast--overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
 }
 
 
