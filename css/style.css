@@ -36,7 +36,8 @@ h1, h2, h3, h4,
 ul, dl, dd, dt
 fieldset, legend, label, textarea,
 table,
-video {
+video,
+blockquote {
     margin-bottom: 1rem;
 }
 
@@ -68,7 +69,8 @@ dt {
 p, ul,
 dd,
 label, input, textarea
-th, td  {
+tr, th, td,
+blockquote  {
     font-family: 'Gill Sans', 'Lato', sans-serif;
 }
 
@@ -299,17 +301,7 @@ dt {
     #H-Hero
 \*------------------------------------*/
 
-.hero--closet {
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-        url(../images/closet.jpg);
-}
-
-.hero--alaska {
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-        url(../images/map_alaska.jpg);
-}
+/* Hero images stored in section O */
 
 
 .hero {
@@ -422,6 +414,8 @@ td:first-child {
 tr:nth-child(even) {
     background-color: rgba(33, 33, 37, 0.05);
 }
+
+
 
 
 
@@ -566,6 +560,9 @@ video {
 }
 
 
+
+
+
 /*------------------------------------*\
     #N-Responsive-Text
 \*------------------------------------*/
@@ -598,4 +595,30 @@ video {
     html {
         font-size: 150%;
     }
+}
+
+
+
+
+
+/*------------------------------------*\
+    #O-Hero images
+\*------------------------------------*/
+
+.hero--closet {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url(../images/closet.jpg);
+}
+
+.hero--alaska {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url(../images/map_alaska.jpg);
+}
+
+.hero--eric {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url(../images/profile_eric.jpg);
 }
