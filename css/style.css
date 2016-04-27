@@ -183,10 +183,7 @@ dt {
     margin: 0;
 }
 
-.page--closet {
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-        url(../images/closet.jpg);
+.page--hero {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -194,7 +191,7 @@ dt {
     color: #FFFDF9;
 }
 
-    .page--closet a {
+    .page--hero a {
         color: #FFFDF9;
     }
 
@@ -296,6 +293,19 @@ dt {
     #H-Hero
 \*------------------------------------*/
 
+.hero--closet {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url(../images/closet.jpg);
+}
+
+.hero--alaska {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url(../images/map_alaska.jpg);
+}
+
+
 .hero {
     margin-top: 9%;
     padding-bottom: 12%;
@@ -393,6 +403,7 @@ th, tr, td {
     padding: 0.4em 1em;
 }
 
+
 th {
     border-bottom: 0.1em solid #212525;
 }
@@ -400,6 +411,7 @@ th {
 td:first-child {
     border-right: 0.1em solid #212525;
 }
+
 
 tr:nth-child(even) {
     background-color: rgba(33, 33, 37, 0.05);
@@ -511,7 +523,7 @@ textarea {
 }
 
 
-@media only screen and (min-width: 64em) {
+/*@media only screen and (min-width: 64em) {
 
     .form--two-col {
         clear: both;
@@ -528,7 +540,7 @@ textarea {
         float: left;
         margin-left: 10%;
     }
-}
+}*/
 
 /*------------------------------------*\
     #M-Multimedia
