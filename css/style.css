@@ -611,11 +611,19 @@ video {
         url(../images/closet.jpg);
 }
 
+
 .hero--alaska {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
         url(../images/map_alaska.jpg);
 }
+
+.hero--east-coast {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url(../images/map_east-coast.jpg);
+}
+
 
 .hero--eric {
     background-image:
