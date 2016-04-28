@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Move functions
   // ---------------------------------------------------------------------
 
+  // Call this to move to new slide, regardless of current index
   function move(newIndex) {
 
     changeContent(newIndex);
@@ -43,6 +44,8 @@ document.addEventListener('DOMContentLoaded', function() {
       heroContainer.classList.remove(currentHero);
 
       // determine new hero--image
+      // TODO: Remove this dependency; should be determining hero--image based
+      //        on HTML, not JS hardcoded values
       var newHero = '';
       if (newIndex === 0) { newHero = 'hero--alaska'; }
       if (newIndex === 1) { newHero = 'hero--east-coast'; }
@@ -58,15 +61,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
 
-    // changeContent(0);
-
     function animateMove(currentIndex, newIndex) {
+      //     - transition left if chosen slide is < index
+      //     - transition right if chosen slide is > index
 
     }
 
   // ---------------------------------------------------------------------
   // Create buttons
   // ---------------------------------------------------------------------
+  var buttonArray = [];
+
+  for (var index = 0; index < slides.length; index++) {
+
+    // create button
+    var newButton;
+
+    // add event listener
+    newButton.addEventListener('click', move(index), false);
+
+    // add to buttonArray
+    buttonArray.push(newButton);
+
+  }
+
+  // add buttonArray to HTML
+  querySelector('slider__buttons').innerHTML('buttonArray');
+
 
   // ---------------------------------------------------------------------
   // Add timer
