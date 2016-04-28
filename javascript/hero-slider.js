@@ -32,6 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
     changeContent(newIndex);
     animateMove(currentIndex, newIndex);
 
+    currentIndex = newIndex;
+
   }
 
 
@@ -50,9 +52,13 @@ document.addEventListener('DOMContentLoaded', function() {
       heroContainer.classList.add(newHero);
       currentHero = newHero;
 
-      // change text
+      // change current slide (text)
+      slides[currentIndex].classList.remove('slider--show');
+      slides[newIndex].classList.add('slider--show');
 
     }
+
+    // changeContent(0);
 
     function animateMove(currentIndex, newIndex) {
 

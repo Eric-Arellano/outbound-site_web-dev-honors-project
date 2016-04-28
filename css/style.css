@@ -655,6 +655,7 @@ video {
     position: absolute;
 }
 
-    .slider__slide:first-child {
-        display: block;
-    }
+
+.slider--show {
+    display: block;
+}
