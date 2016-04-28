@@ -218,10 +218,6 @@ dt {
         color: #31A3A3;
     }
 
-    .page--black .mast a {
-        color: #FFFDF9
-    }
-
 
 .page--black--tan-text {
         background-color: #212525;
@@ -263,7 +259,9 @@ dt {
 }
 
 
-
+.mast a {
+    color: #FFFDF9
+}
 
 
 /*------------------------------------*\
@@ -462,6 +460,11 @@ tr:nth-child(even) {
         border-color: #FFFDF9;
         color: #151818;
     }
+
+    .button--white:hover a {
+        color: #151818;
+    }
+
 
 .button--black {
     background-color: #212525;
