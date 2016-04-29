@@ -295,15 +295,49 @@ dt {
     display: none;
 }
 
+@media only screen and (max-width: 64em) {
+
+    .primary-nav {
+        height: auto;
+    }
+
+    .primary-nav__list {
+        width: 100%;
+        display: block;
+        height: auto;
+        margin-bottom: 1em;
+    }
+
+    .primary-nav__list li {
+        width: 50%;
+        float: left;
+        position: relative;
+        padding: 0.5em 0;
+    }
+
+    .primary-nav__list .button {
+        border: none;
+    }
+        .primary-nav__list .button:hover {
+            background-color: transparent;
+            color: #FFFDF9;
+        }
+
+    .hero {
+        clear: both;
+    }
+}
+
 @media only screen and (max-width: 45em) {
 
     .primary-nav__list {
         display: none;
         height: auto;
+        position: relative;
     }
 
     .primary-nav__pull {
-        display: inline-block;
+        display: block;
         background: url("../images/mobile-menu.svg") no-repeat;
         height: 1.7em;
         width: 1.7em;
