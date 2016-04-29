@@ -591,21 +591,26 @@ textarea {
 }
 
 
-@media only screen and (min-width: 64em) {
+/*@media only screen and (min-width: 64em) {
 
-    /*.form--two-col {
-        clear: both;
-        background-color: #3EF;
-    }*/
+    .form--two-col .formlist {
+        width: 100%;
+        display: block;
+        height: auto;
+        margin-bottom: 1em;
+    }
 
-    /*.form--two-col li:nth-last-child(2) {
-        float: right;
-        display: inline;
-        color: #3EF;
-    }*/
+    .form--two-col .form__list li {
+        width: 50%;
+        float: left;
+        position: relative;
+        padding: 0.5em 0;
+    }
+}*/
 
 
-}
+
+
 
 /*------------------------------------*\
     #M-Multimedia
