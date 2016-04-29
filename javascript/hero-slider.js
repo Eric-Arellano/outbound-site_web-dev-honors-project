@@ -8,8 +8,6 @@
 //   - animate transitions
 //     - transition left if chosen slide is < index
 //     - transition right if chosen slide is > index
-//
-// Add timer
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -23,6 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var currentIndex = 0;
   var currentHero = 'hero--alaska';
 
+
+
   // ---------------------------------------------------------------------
   // Move functions
   // ---------------------------------------------------------------------
@@ -32,6 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     changeContent(newIndex);
     animateMove(currentIndex, newIndex);
+
+    // update buttons
+    buttonArray[currentIndex].classList.remove('slider__button--active');
+    buttonArray[newIndex].classList.add('slider__button--active');
 
     currentIndex = newIndex;
 
@@ -67,32 +71,36 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
 
+
+
   // ---------------------------------------------------------------------
   // Create buttons
   // ---------------------------------------------------------------------
+
   var buttonArray = [];
+  var buttonContainer = document.querySelector('.slider__button-container');
 
   for (var index = 0; index < slides.length; index++) {
 
     // create button
-    var newButton;
+    var newButton = document.createElement('button');
+    newButton.classList.add('slider__button');
+
+    // check if active
+    if (index === currentIndex) {
+      newButton.classList.add('slider__button--active');
+    }
 
     // add event listener
-    newButton.addEventListener('click', move(index), false);
+    newButton.addEventListener('click', function() {
+      move(index);
+    }, false);
 
-    // add to buttonArray
+    // add to container and array
+    buttonContainer.appendChild(newButton);
     buttonArray.push(newButton);
 
   }
-
-  // add buttonArray to HTML
-  querySelector('slider__buttons').innerHTML('buttonArray');
-
-
-  // ---------------------------------------------------------------------
-  // Add timer
-  // ---------------------------------------------------------------------
-
 
 
 });
