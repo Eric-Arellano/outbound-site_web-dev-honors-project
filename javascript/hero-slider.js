@@ -1,13 +1,7 @@
-// Assign each slide an index
-// Create a button for each slider
-//
-// Create function to move slide
-//   - change class of .page--hero by giving appropriate hero--image
-//        - must remove previous hero--image class
-//        - maybe toggle class on and off?
-//   - animate transitions
-//     - transition left if chosen slide is < index
-//     - transition right if chosen slide is > index
+// TODO: add animations
+// TODO: add timer / auto-advance
+// TODO: add previous and next buttons
+// TODO: Remove dependency for hero--image
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -42,34 +36,34 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 
-    function changeContent(newIndex) {
+  function changeContent(newIndex) {
 
-      // remove current hero--image
-      heroContainer.classList.remove(currentHero);
+    // remove current hero--image
+    heroContainer.classList.remove(currentHero);
 
-      // determine new hero--image
-      // TODO: Remove this dependency; should be determining hero--image based
-      //        on HTML, not JS hardcoded values
-      var newHero = '';
-      if (newIndex === 0) { newHero = 'hero--alaska'; }
-      if (newIndex === 1) { newHero = 'hero--east-coast'; }
-      if (newIndex === 2) { newHero = 'hero--eric'; }
+    // determine new hero--image
+    // TODO: Remove this dependency; should be determining hero--image based
+    //        on HTML, not JS hardcoded values
+    var newHero = '';
+    if (newIndex === 0) { newHero = 'hero--alaska'; }
+    if (newIndex === 1) { newHero = 'hero--east-coast'; }
+    if (newIndex === 2) { newHero = 'hero--eric'; }
 
-      // add new hero--image
-      heroContainer.classList.add(newHero);
-      currentHero = newHero;
+    // add new hero--image
+    heroContainer.classList.add(newHero);
+    currentHero = newHero;
 
-      // change current slide (text)
-      slides[currentIndex].classList.remove('slider--show');
-      slides[newIndex].classList.add('slider--show');
+    // change current slide (text)
+    slides[currentIndex].classList.remove('slider--show');
+    slides[newIndex].classList.add('slider--show');
 
-    }
+  }
 
-    function animateMove(currentIndex, newIndex) {
-      //     - transition left if chosen slide is < index
-      //     - transition right if chosen slide is > index
+  function animateMove(currentIndex, newIndex) {
+    //     - transition left if chosen slide is < index
+    //     - transition right if chosen slide is > index
 
-    }
+  }
 
 
 
@@ -84,16 +78,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // create button
     var newButton = document.createElement('button');
+    newButton.index = index;
     newButton.classList.add('slider__button');
 
-    // check if active
+    // mark if active
     if (index === currentIndex) {
       newButton.classList.add('slider__button--active');
     }
 
     // add event listener
     newButton.addEventListener('click', function() {
-      move(index);
+      move(this.index);
     }, false);
 
     // add to container and array

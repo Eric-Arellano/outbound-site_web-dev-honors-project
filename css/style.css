@@ -618,7 +618,7 @@ video {
 
 .hero--alaska {
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
         url(../images/map_alaska.jpg);
 }
 
