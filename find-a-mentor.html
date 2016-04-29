@@ -100,40 +100,41 @@
                     <legend>LGBTQ Identity</legend>
 
                     <label>Which gender(s) do you most identify with?</label>
-                    <ul class="form__list  form--two-col">
-                        <li class="form--two-col__left">
+                    <ul class="form__list  form--two-col" id="">
+                        <li>
                             <label>
                             <input type="checkbox" name="gender"
                             id="gender--male">
                             Male</label>
                         </li>
-                        <li class="form--two-col__left">
+                        <li>
                             <label>
                             <input type="checkbox" name="gender"
                             id="gender--female">
                             Female</label>
                         </li>
-                        <li class="form--two-col__right">
+                        <li>
                             <label>
                             <input type="checkbox" name="gender"
                             id="gender--trans-mtf">
                             Transgender male-to-female</label>
                         </li>
-                        <li class="form--two-col__right">
+                        <li>
                             <label>
                             <input type="checkbox" name="gender"
                             id="gender--queer">
                             Gender-queer</label>
                         </li>
-                        <li class="form--two-col__right">
+                        <li>
                             <label>
                             <input type="checkbox" name="gender"
                             id="gender--trans-ftm">
                             Transgender female-to-male</label>
                         </li>
-                        <li class="form--two-col__left">
-                            <input type="text" value="Other" class="input--large"
-                            name="gender" id="gender--other"></label>
+                        <li>
+                            <input type="text" placeholder="Other"
+                            class="input--large" name="gender"
+                            id="gender--other"></label>
                         </li>
                     </ul>
 
@@ -165,8 +166,9 @@
                             No one (asexual)</label>
                         </li>
                         <li>
-                            <input type="text" value="Other" class="input--large"
-                            name="attraction" id="attraction--other">
+                            <input type="text" placeholder="Other"
+                            class="input--large" name="attraction"
+                            id="attraction--other">
                         </li>
                     </ul>
 
@@ -287,7 +289,7 @@
                             </tr>
                             <tr>
                                 <td headers="table--obstacle"><input type="text"
-                                    class="input--medium" value="Other"
+                                    class="input--medium" placeholder="Other"
                                     name="other"></td>
                                 <td headers="table--0"><input type="radio"
                                     value="0" name="other"/></td>
@@ -387,7 +389,7 @@
                             Buddhist</label>
                         </li>
                         <li>
-                            <input type="text" value="Other"
+                            <input type="text" placeholder="Other"
                             name="religion--personal"
                             id="religion--personal--other">
                         </li>
@@ -439,7 +441,7 @@
                             Buddhist</label>
                         </li>
                         <li>
-                            <input type="text" value="Other"
+                            <input type="text" placeholder="Other"
                             name="religion--background"
                             id="religion--background--other">
                         </li>
@@ -479,7 +481,7 @@
                             South Asian</label>
                         </li>
                         <li>
-                            <input type="text" value="Other" name="culture"
+                            <input type="text" placeholder="Other" name="culture"
                             id="culture--other">
                         </li>
                     </ul>
@@ -529,7 +531,7 @@
                             Volunteering</label>
                         </li>
                         <li>
-                            <input type="text" value="Other, e.g. gaming"
+                            <input type="text" placeholder="Other, e.g. gaming"
                             name="communities" id="communities--other">
                         </li>
                     </ul>
