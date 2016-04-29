@@ -291,7 +291,23 @@ dt {
     font-weight: bold;
 }
 
+@media only screen and (max-width: 45em) {
+    .primary-nav__list li {
+        /*font-size: 60%;*/
+        padding: 0.4em 0.3em;
+        display: block;
+    }
 
+    .primary-nav__list li .button {
+        margin-top: 3rem;
+    }
+
+    .primary-nav__list li:last-child {
+        margin-bottom: 10em;
+    }
+
+
+}
 
 
 
