@@ -1,20 +1,23 @@
 /**
  * CONTENTS
  *
- * #A-General & Margins                   23
+ * #A-General & Margins                   26
  * #B-Fonts                               60
- * #C-Headings                            87
- * #D-Special Text                        145
- * #E-Page (backgrounds)                  175
- * #F-Masthead                            237
- * #G-Primary-nav                         262
- * #H-Hero                                293
- * #I-Main                                323
- * #J-Footer                              371
- * #K-Buttons                             386
- * #L-Forms                               444
- * #M-Multimedia                          465
- * #N-Responsive-Text                     482
+ * #C-Headings                            89
+ * #D-Special Text                        148
+ * #E-Page (backgrounds)                  183
+ * #F-Masthead                            238
+ * #G-Primary-nav                         273
+ * #H-Hero                                370
+ * #I-Main                                403
+ * #J-Footer                              451
+ * #K-Tables                              466
+ * #L-Buttons                             492
+ * #M-Forms                               556
+ * #N-Multimedia                          623
+ * #O-Responsive-Text                     644
+ * #P-Hero images                         682
+ * #Q-Hero slider                         716
  */
 
 
@@ -264,6 +267,9 @@ dt {
 }
 
 
+
+
+
 /*------------------------------------*\
     #G-Primary-nav
 \*------------------------------------*/
@@ -356,6 +362,8 @@ dt {
     }
 
 }
+
+
 
 
 
@@ -546,7 +554,7 @@ tr:nth-child(even) {
 
 
 /*------------------------------------*\
-    #L-Forms
+    #M-Forms
 \*------------------------------------*/
 
 input {
@@ -613,7 +621,7 @@ textarea {
 
 
 /*------------------------------------*\
-    #M-Multimedia
+    #N-Multimedia
 \*------------------------------------*/
 
 video {
@@ -634,7 +642,7 @@ video {
 
 
 /*------------------------------------*\
-    #N-Responsive-Text
+    #O-Responsive-Text
 \*------------------------------------*/
 
 @media only screen and (max-width: 40em) {
@@ -672,7 +680,7 @@ video {
 
 
 /*------------------------------------*\
-    #O-Hero images
+    #P-Hero images
 \*------------------------------------*/
 
 .hero--closet {
@@ -706,7 +714,7 @@ video {
 
 
 /*------------------------------------*\
-    #P-Hero Slider
+    #Q-Hero Slider
 \*------------------------------------*/
 /* TODO: Fix this CSS! Not Object Oriented */
 
