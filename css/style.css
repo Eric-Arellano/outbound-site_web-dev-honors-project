@@ -299,6 +299,7 @@ dt {
 
     .primary-nav__list {
         display: none;
+        height: auto;
     }
 
     .primary-nav__pull {
@@ -309,7 +310,6 @@ dt {
         position: absolute;
         right: 1em;
         top: 0.4em;
-
     }
 
 }
