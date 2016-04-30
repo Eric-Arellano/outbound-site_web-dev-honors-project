@@ -597,7 +597,7 @@ textarea {
     padding: 0.4em;
 }
 
-textarea {    
+textarea {
     min-width: 25em; max-width: 50em;
     height: 10em;
     resize: none;
@@ -741,7 +741,7 @@ video {
 
 
 /*------------------------------------*\
-    #Q-Hero Slider
+    #Q-JS Content Panels
 \*------------------------------------*/
 /* TODO: Fix this CSS! Not Object Oriented */
 
@@ -789,4 +789,8 @@ video {
     border-color: #31A3A3;
     background-color: #31A3A3;
 
+}
+
+.accordion dd {
+    display: none;
 }
