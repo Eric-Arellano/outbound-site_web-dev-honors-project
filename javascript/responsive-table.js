@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   var tableHeaders = document.querySelectorAll('.table--responsive th');
-  var tableBody = document.querySelectorAll('.table--responsive tbody');
+  var tableBody = document.querySelector('.table--responsive tbody');
 
   // store headers
   var headerText = [];
@@ -10,10 +10,19 @@ document.addEventListener('DOMContentLoaded', function() {
     headerText.push(currentHeader.textContent.replace(/\r?\n|\r/, ''));
   }
 
+  console.log(headerText);
+
   // assign headers to td
-  for (var indexRow = 0, row; row = tableBody.rows[indexRow]; indexRow++) {
-    for (var indexCol = 0, col; col = row.cells[indexCol]; indexCol++) {
-      col.setAttribute('data-th', headerText[indexCol]);
+  for (var indexRow = 0; indexRow < tableBody.rows.length; indexRow++) {
+
+    console.log(indexRow);
+    
+    for (var indexCol = 0; indexCol < tableBody.rows[indexRow].cells.length;
+      indexCol++) {
+
+      console.log(indexCol);
+      var currentCell = tableBody.rows[indexRow].cells[indexCol];
+      currentCell.setAttribute('data-th', headerText[indexCol]);
     }
   }
 
