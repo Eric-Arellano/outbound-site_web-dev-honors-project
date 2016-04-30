@@ -312,13 +312,14 @@ dt {
         display: block;
         height: auto;
         margin-bottom: 1em;
+        text-align: left;
     }
 
     .primary-nav__list li {
-        width: 50%;
         float: left;
         position: relative;
         padding: 0.5em 0;
+        border: 0.1em solid #FFFDF9;
     }
 
     .primary-nav__list .button {
