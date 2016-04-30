@@ -500,7 +500,7 @@ tr:nth-child(even) {
         background-color: rgba(33, 33, 37, 0.05);
         border: 0;
     }
-        tr:nth-child(even) {
+        .table--responsive tr:nth-child(even) {
             background-color: transparent;
         }
 
@@ -597,8 +597,8 @@ textarea {
     padding: 0.4em;
 }
 
-textarea {
-    width: 50em;
+textarea {    
+    min-width: 25em; max-width: 50em;
     height: 10em;
     resize: none;
 }
