@@ -10,12 +10,18 @@ $(function() {
   $pull.on('click', function(event) {
     event.preventDefault();
 
-    $mast.height($mastHeight + $menuHeight).fadeIn(1400);
+    // change mast height
+    // TODO: Get these animations to work
+    if ($menu.css('display') === 'none') {
+      $mast.height($mastHeight + $menuHeight).animate(4000);
+    }
+    else {
+      $mast.height($mastHeight).animate(4000);
+    }
 
+    // toggle menu
     $menu.slideToggle();
 
   });
-
-  // TODO: Add reversion after closing menu
 
 });
