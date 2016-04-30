@@ -481,11 +481,37 @@ td:first-child {
     border-right: 0.1em solid #212525;
 }
 
-
 tr:nth-child(even) {
     background-color: rgba(33, 33, 37, 0.05);
 }
 
+
+@media only screen and (max-width: 45em) {
+
+    .table--responsive thead {
+        display: none;
+    }
+
+    .table--responsive tbody td {
+        display: block;
+    }
+
+    .table--responsive tbody tr td:first-child {
+        background-color: rgba(33, 33, 37, 0.05);
+        border: 0;
+    }
+        tr:nth-child(even) {
+            background-color: transparent;
+        }
+
+    .table--responsive tbody td:before {
+        content: attr(data-th);
+        font-weight: bold;
+        display: inline-block;
+        width: 10em;
+    }
+
+}
 
 
 
