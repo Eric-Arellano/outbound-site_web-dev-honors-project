@@ -31,6 +31,6 @@ $(function() {
     if(windowWidth > 45 && $menu.is(':hidden')) {
         $menu.removeAttr('style');
     }
-});
+  });
 
 });
