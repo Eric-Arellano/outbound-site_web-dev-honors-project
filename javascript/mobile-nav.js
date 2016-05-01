@@ -25,4 +25,12 @@ $(function() {
 
   });
 
+  // unhide menu if large breakpoint
+  $(window).resize(function(){
+    var windowWidth = $(window).width() / parseFloat($('html').css('font-size'));
+    if(windowWidth > 45 && $menu.is(':hidden')) {
+        $menu.removeAttr('style');
+    }
+});
+
 });
