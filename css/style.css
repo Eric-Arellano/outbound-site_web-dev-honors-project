@@ -240,7 +240,10 @@ dt {
 \*------------------------------------*/
 
 .mast {
-    padding: 2% 2% 1%;
+    padding: 2% 2%;
+    position: relative;
+    overflow-y: auto;
+    height: auto;
 }
 
 
@@ -251,6 +254,8 @@ dt {
 
 .mast__logo {
     display: inline-block;
+    position: absolute;
+    top: 1.5em;
 }
 
 
@@ -341,25 +346,29 @@ dt {
         text-align: right;
     }
 
+    .mast__logo {
+        top: 1em;
+    }
+
     .primary-nav__list {
         display: none;
         height: auto;
         position: relative;
         clear: both;
-        margin-top: 0.5em;
+        top: 1em;
+        padding-bottom: 1em;
     }
 
     .primary-nav__pull {
         display: block;
         background: url("../images/mobile-menu.svg") no-repeat;
-        height: 1.7em;
+        height: 3em;
         width: 1.7em;
         position: relative;
         right: 1em;
         top: 0.4em;
         clear: both;
         float: right;
-
     }
 
 }

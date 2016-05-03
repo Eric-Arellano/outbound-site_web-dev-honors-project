@@ -12,7 +12,7 @@ $(function() {
 
     // // change mast height
     // // TODO: Get these animations to work
-    var SHRINK_TO_FIT = 1.7;
+    var SHRINK_TO_FIT = 2;
     if ($menu.css('display') === 'none') {
       $mast.height($mastHeight + ($menuHeight / SHRINK_TO_FIT)).animate(4000);
     }
