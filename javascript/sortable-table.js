@@ -3,11 +3,53 @@ document.addEventListener('DOMContentLoaded', function() {
   // ---------------------------------------------------------------------
   // Set up table
   // ---------------------------------------------------------------------
+  var table = document.querySelector('.table--sortable');
+  var tableHeaders = document.querySelectorAll('.table--sortable th');
+  var tableBody = document.querySelector('.table--sortable tbody');
+  var rows = table.rows;
+
+  // add event listener
+  for (var headerIndex = 0; headerIndex < tableHeaders.length; headerIndex++) {
+    var header = tableHeaders[headerIndex];
+    header.addEventListener('click', sort(header, headerIndex), false);
+  }
 
   // ---------------------------------------------------------------------
   // Sort column
   // ---------------------------------------------------------------------
 
+  function sort(header, headerIndex) {
+    if (header.classList.contains('sort--ascending') ||
+      header.classList.contains('sort--descending')) {
+      reverseOrder(header);
+      }
+    else {
+      sortAscending(header, headerIndex);
+    }
+  }
+
+  function sortAscending(header) {
+    header.classList.add('sort--ascending');
+
+    // remove sorting of siblings
+    $(header).siblings().remove('sort--ascending  sort--descending');
+
+    // sort based off of type
+    var sortType = header.dataset.sort;
+    rows.sort(function(a, b) {
+      a = rows[a].cells[headerIndex].textContent;
+      b = rows[b].cells[headerIndex].textContent;
+      return compare[sortType](a, b);
+    });
+
+    tableBody.append(rows);
+  }
+
+  function reverseOrder(header){
+    header.classList.toggle('sort--ascending');
+    header.classList.toggle('sort--descending');
+    tableBody.append(rows.reverse());
+  }
 
   // ---------------------------------------------------------------------
   // Compare functions
@@ -45,13 +87,5 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   };
-
-
-
-
-  a = 'test (remove), test';
-  b = 'one';
-
-  compare.location(a, b);
 
 });
