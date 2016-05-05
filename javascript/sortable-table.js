@@ -3,10 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // ---------------------------------------------------------------------
   // Set up table
   // ---------------------------------------------------------------------
-  var table = document.querySelector('.table--sortable');
   var tableHeaders = document.querySelectorAll('.table--sortable th');
   var tableBody = document.querySelector('.table--sortable tbody');
-  var rows = table.rows;
+  var rows = $(tableBody).find('tr').toArray();
 
   // add event listener
   for (var headerIndex = 0; headerIndex < tableHeaders.length; headerIndex++) {
@@ -35,10 +34,10 @@ document.addEventListener('DOMContentLoaded', function() {
     $(header).siblings().remove('sort--ascending  sort--descending');
 
     // sort based off of type
-    var sortType = header.dataset.sort;
+    var sortType = $(header).data('sort');
     rows.sort(function(a, b) {
-      a = rows[a].cells[headerIndex].textContent;
-      b = rows[b].cells[headerIndex].textContent;
+      a = $(a).find('td').eq(headerIndex).text();
+      b = $(b).find('td').eq(headerIndex).text();
       return compare[sortType](a, b);
     });
 
