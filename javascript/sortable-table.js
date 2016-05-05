@@ -5,9 +5,18 @@ document.addEventListener('DOMContentLoaded', function() {
   var $controls = $table.find('th');
   var rows = $tbody.find('tr').toArray();
 
-  $controls.on('click', function() {
+  console.log($table);
+  console.log($tbody);
+  console.log($controls);
+  console.log(rows);
+
+  $controls.on('click', function(e) {
+
+    console.log( 'clicked!' );
+
     var $header = $(this);
     var sortType = $header.data('sort');
+    var column;
 
     // reverse if already sorted
     if ($header.is('.sort--ascending') || $header.is('.sort--descending')) {
@@ -23,15 +32,14 @@ document.addEventListener('DOMContentLoaded', function() {
       $header.siblings().removeClass('sort--ascending  sort--descending');
 
       // sort according to type
-      if (compare.hasOwnProperty(order)) {
-        var column = $controls.index(this);
+      column = $controls.index(this);
+      console.log(column);
 
-        rows.sort(function(a, b) {
-          a = $(a).find('td').eq(column).text();
-          b = $(b).find('td').eq(column).text();
-          return compare[sortType](a, b);
-        });
-      }
+      rows.sort(function(a, b) {
+        a = $(a).find('td').eq(column).text();
+        b = $(b).find('td').eq(column).text();
+        return compare[sortType](a, b);
+      });
 
       $tbody.append(rows.reverse());
     }
@@ -42,7 +50,14 @@ document.addEventListener('DOMContentLoaded', function() {
   // ---------------------------------------------------------------------
   var compare = {
 
-    // alphabetical data uses default compare function
+    alphabetical: function(a, b) {
+      if (a < b) {
+        return - 1;
+      }
+      else {
+        return a > b ? 1: 0;
+      }
+    },
 
     number: function(a, b) {
       return a - b;
