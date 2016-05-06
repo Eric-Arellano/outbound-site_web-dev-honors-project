@@ -528,15 +528,18 @@ tr:nth-child(even) {
         cursor: pointer;
     }
 
-    sort--ascending:after {
-        content: '\25B2';
-        float: left;
+    .sort--ascending:after, .sort--descending:after {
+        font-size: 60%;
+        padding: 0.2em 0.4em;
     }
 
-    sort--descending:after {
-        content: '\25BC';
-        float: left;
-    }
+        .sort--descending:after {
+            content: '\25BC';
+        }
+
+        .sort--ascending:after {
+            content: '\25B2';
+        }
 }
 
 
