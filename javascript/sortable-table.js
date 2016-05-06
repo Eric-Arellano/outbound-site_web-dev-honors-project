@@ -5,14 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var $controls = $table.find('th');
   var rows = $tbody.find('tr').toArray();
 
-  console.log($table);
-  console.log($tbody);
-  console.log($controls);
-  console.log(rows);
-
   $controls.on('click', function(e) {
-
-    console.log( 'clicked!' );
 
     var $header = $(this);
     var sortType = $header.data('sort');
@@ -33,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // sort according to type
       column = $controls.index(this);
-      console.log(column);
 
       rows.sort(function(a, b) {
         a = $(a).find('td').eq(column).text();
